@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Título SEO -->
+  <title>Purificadora Ultrainmaculada - Agua Purificada de Alta Calidad</title>
+  <meta name="description" content="Embotelladora de Agua Purificada. Rapidez, pureza y protección para tu hogar y negocio en Pensador Mexicano y Peñón de los Baños.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tu-dominio.com/">
+
+  <!-- ========================================================= -->
+  <!-- ETIQUETAS OPEN GRAPH (WhatsApp, Facebook, LinkedIn)      -->
+  <!-- ========================================================= -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tu-dominio.com/">
+  <meta property="og:title" content="Purificadora Ultrainmaculada">
+  <meta property="og:description" content="Embotelladora de Agua Purificada">
+  <meta property="og:image" content="https://res.cloudinary.com/y4fv6jwh/image/upload/v1784691853/whatsapp_sf6dym.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Agua Ultra Inmaculada Pensador Mexicano">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- ========================================================= -->
+  <!-- ETIQUETAS TWITTER CARDS                                  -->
+  <!-- ========================================================= -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://tu-dominio.com/">
+  <meta name="twitter:title" content="Purificadora Ultrainmaculada">
+  <meta name="twitter:description" content="Embotelladora de Agua Purificada">
+  <meta name="twitter:image" content="https://res.cloudinary.com/y4fv6jwh/image/upload/v1784691853/whatsapp_sf6dym.png">
+
+  <!-- Tipografía Google Fonts (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Variables de Estilo y Colores */
+    :root {
+      --primary-color: #0055A5;   /* Azul Principal */
+      --cyan-color: #00A8EE;      /* Azul Cyan */
+      --whatsapp-color: #2ECC71;  /* Verde WhatsApp */
+      --whatsapp-hover: #25D366;  /* Verde WhatsApp alternativo */
+      --bg-color: #F8FAFC;        /* Gris Ultrasuave */
+      --text-color: #1E293B;      /* Texto Oscuro */
+      --white: #FFFFFF;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+      --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+      --shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
+      --border-radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img, video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Botones CTA */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+      text-align: center;
+    }
+
+    .btn-whatsapp {
+      background-color: var(--whatsapp-color);
+      color: var(--white);
+      box-shadow: 0 4px 14px rgba(46, 204, 113, 0.35);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: var(--whatsapp-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-secondary {
+      background-color: var(--primary-color);
+      color: var(--white);
+    }
+
+    .btn-secondary:hover {
+      background-color: #004080;
+      transform: translateY(-2px);
+    }
+
+    .btn-cyan {
+      background-color: var(--cyan-color);
+      color: var(--white);
+    }
+
+    .btn-cyan:hover {
+      background-color: #0090cc;
+      transform: translateY(-2px);
+    }
+
+    /* Botón Flotante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: var(--whatsapp-color);
+      color: var(--white);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: var(--shadow-lg);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      background-color: var(--whatsapp-hover);
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float .tooltiptext {
+      visibility: hidden;
+      width: 170px;
+      background-color: #1E293B;
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      padding: 8px 12px;
+      position: absolute;
+      z-index: 1;
+      right: 70px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      opacity: 0;
+      transition: opacity 0.3s;
+      white-space: nowrap;
+    }
+
+    .whatsapp-float:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    /* SECCIÓN 1: HERO CON FONDO Y OVERLAY */
+    .hero-section {
+      position: relative;
+      background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.82) 0%, rgba(0, 85, 165, 0.88) 100%), 
+                        url('https://res.cloudinary.com/y4fv6jwh/image/upload/v1784690985/sin_boton_zyzowk.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 100px 0 90px 0;
+      color: var(--white);
+    }
+
+    .hero-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(8px);
+      color: #FFFFFF;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 8px 20px;
+      border-radius: 30px;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .hero-title {
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.25;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    @media (min-width: 768px) {
+      .hero-title {
+        font-size: 3.6rem;
+      }
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: #E2E8F0;
+      margin-bottom: 32px;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .bullets-list {
+      list-style: none;
+      margin-top: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .bullets-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: #F8FAFC;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(6px);
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+    }
+
+    /* SECCIÓN 2: QUIÉNES SOMOS (MISIÓN & VISIÓN + VIDEO) */
+    .about-section {
+      padding: 80px 0;
+      background-color: var(--bg-color);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    @media (min-width: 992px) {
+      .about-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-md);
+      object-fit: cover;
+    }
+
+    .section-tag {
+      color: var(--cyan-color);
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      color: var(--primary-color);
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    /* Grilla paralela Misión y Visión */
+    .mv-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: 600px) {
+      .mv-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .mv-card {
+      background: var(--white);
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: var(--shadow-sm);
+      border-top: 4px solid var(--primary-color);
+    }
+
+    .mv-card.vision-card {
+      border-top-color: var(--cyan-color);
+    }
+
+    .mv-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .mv-text {
+      color: #334155;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .value-promise {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .value-item {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      background: var(--white);
+      padding: 14px 18px;
+      border-radius: 12px;
+      box-shadow: var(--shadow-sm);
+      font-size: 0.95rem;
+    }
+
+    /* SECCIÓN 3: PROCESO DE PURIFICACIÓN */
+    .process-section {
+      padding: 80px 0;
+      background-color: var(--white);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px auto;
+    }
+
+    .infographic-banner {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .infographic-banner img {
+      max-width: 100%;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+      margin: 0 auto;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    @media (min-width: 576px) {
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .process-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .step-card {
+      background-color: var(--bg-color);
+      padding: 28px 20px;
+      border-radius: var(--border-radius);
+      border-top: 4px solid var(--cyan-color);
+      transition: transform 0.3s ease;
+    }
+
+    .step-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .step-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 12px;
+    }
+
+    .step-desc {
+      font-size: 0.95rem;
+      color: #475569;
+    }
+
+    /* SECCIÓN 4: FORMAS DE SERVICIO */
+    .services-section {
+      padding: 80px 0;
+      background-color: var(--bg-color);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    @media (min-width: 992px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .service-card {
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      padding: 32px 24px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .service-header-title {
+      font-size: 1.4rem;
+      color: var(--primary-color);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .service-desc {
+      color: #475569;
+      margin-bottom: 20px;
+      font-size: 0.98rem;
+    }
+
+    .quick-data {
+      background-color: var(--bg-color);
+      padding: 16px;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 0.9rem;
+    }
+
+    .quick-data div {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .service-card .btn {
+      width: 100%;
+    }
+
+    /* SECCIÓN 5: FOOTER */
+    .footer {
+      background-color: var(--primary-color);
+      color: var(--white);
+      padding: 60px 0 20px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .footer-brand h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .footer-brand p {
+      color: #CBD5E1;
+      font-size: 0.95rem;
+    }
+
+    .footer-contact h4, .footer-cta h4 {
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      color: var(--cyan-color);
+    }
+
+    .contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 0.95rem;
+    }
+
+    .contact-list a {
+      color: var(--white);
+      transition: color 0.2s;
+    }
+
+    .contact-list a:hover {
+      color: var(--cyan-color);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #94A3B8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Elemento Persistente: Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/525624778984?text=Hola,%20me%20gustaría%20hacer%20un%20pedido%20a%20domicilio" 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="tooltiptext">¡Pide tu agua pura aquí!</span>
+  </a>
+
+  <!-- 1️⃣ SECCIÓN 1: Portada / Hero Section (Fondo con Imagen + Overlay) -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="hero-wrapper">
+        <div class="badge">
+          💧 Agua Purificada de Alta Calidad
+        </div>
+        <h1 class="hero-title">Rapidez, pureza y protección</h1>
+        <p class="hero-subtitle">
+          Agua 100% purificada y fresca para tu hogar y negocio en Pensador Mexicano y Peñón de los Baños.
+        </p>
+        
+        <a href="https://wa.me/525624778984?text=Hola,%20me%20gustaría%20hacer%20un%20pedido%20a%20domicilio" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> Haz tu pedido aquí
+        </a>
+
+        <ul class="bullets-list">
+          <li>⚡ Entrega rápida a domicilio</li>
+          <li>🛡️ Filtración UV + Ozono</li>
+          <li>🏪 Ventanilla y Vending 24/7</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2️⃣ SECCIÓN 2: Quiénes Somos (Video en Bucle + Misión & Visión) -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Columna Izquierda: Video en bucle con sonido opcional -->
+          <div class="video-wrapper">
+            <video autoplay loop muted playsinline controls poster="https://res.cloudinary.com/y4fv6jwh/image/upload/v1784688101/portada_jxvvtk.png">
+              <source src="https://res.cloudinary.com/y4fv6jwh/video/upload/v1784687965/video_djqbte.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+
+          <!-- Columna Derecha: Misión, Visión y Compromiso -->
+          <div class="about-content">
+            <span class="section-tag">SOBRE NOSOTROS</span>
+            <h2 class="section-title">Quiénes Somos</h2>
+
+            <!-- Grilla paralela de Misión y Visión -->
+            <div class="mv-grid">
+              <div class="mv-card">
+                <h3 class="mv-title">🎯 Misión</h3>
+                <p class="mv-text">
+                  Brindar agua purificada de la más alta calidad a un precio justo, combinando innovación tecnológica en filtración con responsabilidad ambiental.
+                </p>
+              </div>
+
+              <div class="mv-card vision-card">
+                <h3 class="mv-title">🚀 Visión</h3>
+                <p class="mv-text">
+                  Consolidarnos como una purificadora líder en el mercado a través de experiencia y calidad.
+                </p>
+              </div>
+            </div>
+
+            <!-- Promesas de Valor -->
+            <div class="value-promise">
+              <div class="value-item">
+                <span>🍃</span>
+                <div>
+                  <strong>Cuidado Ecológico:</strong> Fomento activo del reuso higiénico de garrafones para reducir la huella plástica.
+                </div>
+              </div>
+              <div class="value-item">
+                <span>🔬</span>
+                <div>
+                  <strong>Calidad Garantizada:</strong> Tecnología de grado alimenticio para la absoluta protección de tu familia.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3️⃣ SECCIÓN 3: Proceso de Purificación -->
+    <section class="process-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CALIDAD GARANTIZADA</span>
+          <h2 class="section-title">Nuestro Proceso de Purificación en 4 Pasos</h2>
+          <p style="color: #64748B;">Máxima tecnología de filtración para garantizar la pureza total en cada gota.</p>
+        </div>
+
+        <!-- Asset Explicativo Destacado -->
+        <div class="infographic-banner">
+          <img src="https://res.cloudinary.com/y4fv6jwh/image/upload/v1784686839/imagen_para_link_hka0st.jpg" 
+               alt="Diagrama del proceso de purificación de agua" 
+               loading="lazy">
+        </div>
+
+        <!-- Grid de 4 Pasos -->
+        <div class="process-grid">
+          <div class="step-card">
+            <h3 class="step-title">1. Filtración de Sedimentos y Carbón Activado</h3>
+            <p class="step-desc">Retiene sólidos en suspensión y elimina olores, sabores y residuos de cloro.</p>
+          </div>
+
+          <div class="step-card">
+            <h3 class="step-title">2. Suavizador de Agua</h3>
+            <p class="step-desc">Remueve minerales pesados como calcio y magnesio para darte un sabor ligero y fresco.</p>
+          </div>
+
+          <div class="step-card">
+            <h3 class="step-title">3. Luz UV y Generador de Ozono</h3>
+            <p class="step-desc">Destruye el 99.9% de bacterias y virus, garantizando una protección biológica total.</p>
+          </div>
+
+          <div class="step-card">
+            <h3 class="step-title">4. Lavado y Desinfección Automatizada</h3>
+            <p class="step-desc">Esterilizado profundo e higienización del garrafón antes de proceder a cada llenado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4️⃣ SECCIÓN 4: Formas de Servicio -->
+    <section class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">NUESTROS SERVICIOS</span>
+          <h2 class="section-title">Elige la opción que mejor se adapte a ti</h2>
+        </div>
+
+        <div class="services-grid">
+          <!-- Tarjeta 1: Servicio a Domicilio -->
+          <div class="service-card">
+            <div>
+              <h3 class="service-header-title">🛵 Servicio a Domicilio</h3>
+              <p class="service-desc">Llevamos garrafones de agua pura hasta la puerta de tu casa o negocio con rapidez y seguridad.</p>
+              
+              <div class="quick-data">
+                <div><span>📍</span> <strong>Cobertura:</strong> Pensador Mexicano y Peñón de los Baños.</div>
+                <div><span>⏰</span> <strong>Horario:</strong> Lun - Sáb de 9:00 am a 6:00 pm.</div>
+              </div>
+            </div>
+
+            <a href="https://wa.me/525624778984?text=Hola,%20me%20gustaría%20hacer%20un%20pedido%20a%20domicilio" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+            </a>
+          </div>
+
+          <!-- Tarjeta 2: Llenado en Ventanilla -->
+          <div class="service-card">
+            <div>
+              <h3 class="service-header-title">🏪 Venta en Ventanilla</h3>
+              <p class="service-desc">Trae tus garrafones a nuestra sucursal. Te atendemos con amabilidad y la garantía de un lavado y llenado 100% higiénico.</p>
+              
+              <div class="quick-data">
+                <div><span>⏰</span> <strong>Horario:</strong> Lun - Sáb de 9:00 am a 6:00 pm.</div>
+                <div><span>📍</span> <strong>Ubicación:</strong> Sucursal Pensador Mexicano.</div>
+              </div>
+            </div>
+
+            <a href="https://maps.app.goo.gl/Gnju7wfzXdn1fbnPA?g_st=iw" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-secondary">
+              <i class="fa-solid fa-location-dot"></i> Cómo llegar
+            </a>
+          </div>
+
+          <!-- Tarjeta 3: Vending 24/7 -->
+          <div class="service-card">
+            <div>
+              <h3 class="service-header-title">💧 Despachador Automático 24/7</h3>
+              <p class="service-desc">¡Agua pura a cualquier hora! Rellena tu garrafón de forma rápida, económica y automatizada.</p>
+              
+              <div class="quick-data">
+                <div><span>🌙</span> <strong>Disponible:</strong> 24 horas, los 365 días del año.</div>
+                <div><span>🪙</span> <strong>Pago:</strong> Acepta monedas y entrega cambio.</div>
+                <div><span>✨</span> <strong>Higiene:</strong> Enjuague automático previo.</div>
+              </div>
+            </div>
+
+            <a href="https://maps.app.goo.gl/Gnju7wfzXdn1fbnPA?g_st=iw" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-cyan">
+              <i class="fa-solid fa-map-pin"></i> Ver ubicación Vending
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 5️⃣ SECCIÓN 5: Pie de Página y Contacto (Footer) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Columna 1: Marca -->
+        <div class="footer-brand">
+          <h3>Agua Ultra Inmaculada</h3>
+          <p>Pensador Mexicano</p>
+          <p style="margin-top: 12px; font-style: italic;">Rapidez, pureza y protección para tu familia.</p>
+        </div>
+
+        <!-- Columna 2: Contacto -->
+        <div class="footer-contact">
+          <h4>Contacto Directo</h4>
+          <ul class="contact-list">
+            <li>
+              <i class="fa-brands fa-whatsapp"></i> 
+              <a href="https://wa.me/525624778984" target="_blank" rel="noopener noreferrer">56-24-77-89-84</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-facebook"></i> 
+              <a href="https://www.facebook.com/share/19CCDZMEr6/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Agua Inmaculada Pensador Mexicano</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> 
+              Pensador Mexicano y Peñón de los Baños, CDMX.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: CTA Final -->
+        <div class="footer-cta">
+          <h4>¿Listo para tomar agua pura?</h4>
+          <p style="margin-bottom: 16px; color: #CBD5E1; font-size: 0.9rem;">Cuida la salud de tu familia hoy mismo.</p>
+          <a href="https://wa.me/525624778984?text=Hola,%20me%20gustaría%20hacer%20un%20pedido%20a%20domicilio" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-whatsapp" 
+             style="width: 100%;">
+            <i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Agua Ultra Inmaculada Pensador Mexicano. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
